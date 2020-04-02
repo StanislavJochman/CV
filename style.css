@@ -63,6 +63,17 @@ img {
   height: auto;
 }
 
+.spanPad {
+  display: block;
+  position: relative;
+  top: -65px;
+  visibility: hidden;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
 
 /* ------------------------------ MEDIA --------------------------------*/
 
