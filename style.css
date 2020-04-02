@@ -25,12 +25,12 @@ html {
   float: right;
   background-color: #f3ccbb;
   margin: 1%;
+  text-align: center;
 }
 
 p {
-  text-align: center;
   width: 100%;
-  padding: 1%;
+  padding: 2%;
 }
 
 ul {
