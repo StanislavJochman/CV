@@ -1,11 +1,68 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
 body, html {
   height: 100%;
   line-height: 1.8;
-  color: #2e3d34;
-  background-color: #f8e8d5;
+  color: #442e2a;
+  background-color: #ebe4f2;
+  font-size: 1.2em;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+#sideCard {
+  width: 20%;
+  float: left;
+  background-color: #ec9563;
+  margin: 1%;
+  position: fixed;
+}
+
+.content {
+  width: 76%;
+  float: right;
+  background-color: #f3ccbb;
+  margin: 1%;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  padding: 1%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ec9563;
+}
+
+.nav {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #442e2a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav:hover {
+  background-color: #442e2a;
+  color: #ec9563;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 
 /* ------------------------------ MEDIA --------------------------------*/
 
