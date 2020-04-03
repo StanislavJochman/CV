@@ -28,6 +28,7 @@ html {
   text-align: center;
 }
 
+
 p {
   width: 100%;
   padding: 2%;
@@ -74,6 +75,14 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
+.menu{
+  position: fixed !important;
+  width: 76%;
+  margin-left: 23% !important;
+  background-color: #f3ccbb;
+  margin: 1%;
+  text-align: center;
+}
 
 /* ------------------------------ MEDIA --------------------------------*/
 
@@ -94,7 +103,7 @@ h3 {
 @media screen and (min-width: 470px) {
 
   #pc {
-    display: block;
+    display: contents;
   }
 
   #mobile {
