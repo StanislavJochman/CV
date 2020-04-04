@@ -67,7 +67,7 @@ img {
 .spanPad {
   display: block;
   position: relative;
-  top: -65px;
+  top: -105px;
   visibility: hidden;
 }
 
@@ -75,6 +75,7 @@ h3 {
   text-align: center;
   font-weight: bold;
 }
+
 .menu{
   position: fixed !important;
   width: 76%;
@@ -83,34 +84,77 @@ h3 {
   margin: 1%;
   text-align: center;
 }
+
 .about {
   margin-top: 8rem !important;
 }
 
-/* ------------------------------ MEDIA --------------------------------*/
-
-/* ****************************** MOBIL ******************************* */
-@media screen and (max-width: 469px) {
-
-  #pc {
-    display: none;
-  }
-
-  #mobile {
-    display: block;
-  }
-
+* {
+  box-sizing: border-box;
 }
 
-/* ******************************** PC ******************************** */
-@media screen and (min-width: 470px) {
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 
-  #pc {
-    display: contents;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  #mobile {
-    display: none;
-  }
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: transparent;
+  color: #363237;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+.moreInfo {
+  border: 2px solid #363237;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #363237;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* ------------------------------ MEDIA --------------------------------*/
+@media screen and (max-width: 469px) {
 
 }
