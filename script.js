@@ -12,7 +12,7 @@ function close(numM) {
 //  }
 //}
 
-function open(numM) {
+function open_w(numM) {
   //m[numM].style.display = "block";
   console.log('open')
 }
