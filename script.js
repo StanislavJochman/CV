@@ -1,9 +1,9 @@
-//var m = document.getElementsByClassName("modal");
+var m = document.getElementsByClassName("modal");
 //var span = document.getElementsByClassName("close")[0];
 
-function close(numM) {
-  //m[numM].style.display = "none";
-  console.log('close')
+function close_modal(numM) {
+  m[numM].style.display = "none";
+  //console.log("close")
 }
 
 //window.onclick = function(event) {
@@ -12,7 +12,7 @@ function close(numM) {
 //  }
 //}
 
-function open_w(numM) {
-  //m[numM].style.display = "block";
-  console.log('open')
+function open_modal(numM) {
+  m[numM].style.display = "block";
+  //console.log("open")
 }
