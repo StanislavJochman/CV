@@ -200,11 +200,9 @@ h3 {
 
 /* ------------------------------ MEDIA --------------------------------*/
 @media screen and (max-width: 500px) {
-  .content {
+  .column {
+    position: relative;
     width: 100%;
-    float: right;
-    background-color: red;
-    margin: 1%;
-    text-align: center;
-}
+    padding: 5px;
+  }
 }
