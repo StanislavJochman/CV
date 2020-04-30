@@ -80,6 +80,28 @@ h3 {
   font-weight: bold;
 }
 
+.tabP {
+  text-align: initial;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: #ec9563;
+}
+
+a:active {
+  text-decoration: none;
+}
+
 .menu{
   position: fixed !important;
   width: 76%;
@@ -137,6 +159,7 @@ h3 {
 
 .container:hover .image {
   opacity: 0.3;
+  cursor: pointer;
 }
 
 .container:hover .middle {
