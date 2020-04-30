@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+div {
+  word-wrap: break-word;
+}
+
 #sideCard {
   width: 20%;
   float: left;
@@ -199,10 +203,59 @@ h3 {
 }
 
 /* ------------------------------ MEDIA --------------------------------*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 595px) {
+  .menu {
+    display: none;
+  }
+
+  .content {
+    width: 90%;
+    float: none;
+    margin-left: 5%;
+  }
+
+  #sideCard {
+    display: none;
+  }
+
+  #photoCard {
+    display: block;
+    background-color: #ec9563;
+  }
+
+  .spanPad {
+    top: initial;
+  }
+
+  .about {
+    margin-top: 0rem !important;
+  }
+
+  .avatar {
+    margin: 0.5%;
+  }
+
+  img {
+    margin-top: 5% !important;
+  }
+
   .column {
-    position: relative;
-    width: 100%;
-    padding: 5px;
+    width: 90%;
+    margin-left: 5%;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 595px) {
+  .menu {
+    display: block;
+  }
+
+  #sideCard {
+    display: block;
+  }
+
+  #photoCard {
+    display: none;
   }
 }
