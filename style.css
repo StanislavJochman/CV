@@ -222,7 +222,20 @@ a:active {
 
 .modal-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.2em;
+  color: #ec9563;
+}
+
+hr {
+    width: 75%;
+    align-self: center;
+    border: 5px solid #ec9563 !important;
+    border-radius: 5px;
+    margin-left: 12.5% !important;
+    margin-right: 12.5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    z-index: 999 !important;
 }
 
 /* ------------------------------ MEDIA --------------------------------*/
