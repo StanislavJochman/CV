@@ -11,6 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+   <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+   action="https://script.google.com/macros/s/AKfycbxvUa5P34xiZ41z-l6BGnfm68_42rbDRF_nQOMh/exec">
   </head>
   <body>
 
@@ -242,12 +247,31 @@
 
       <h3>KONTAKT</h3>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis placerat sapien ac aliquet. Nulla sit amet turpis quis dui maximus lobortis vel vel elit. Aliquam fringilla libero sed semper sagittis. In hac habitasse platea dictumst. Nam at pulvinar tellus, a sollicitudin massa. Maecenas scelerisque odio at nisi ultricies, at lacinia ligula blandit. Ut mollis ante libero, finibus egestas ipsum semper vel. Duis quis metus ac eros sodales pulvinar. Suspendisse porta magna tellus, vel sodales orci vestibulum quis. In at urna id velit gravida tincidunt nec quis purus. Vivamus congue tempus lorem nec efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada vestibulum feugiat. Curabitur non ligula sit amet nisl gravida dapibus at mattis lectus. Mauris justo lorem, tristique ut lobortis sit amet, posuere nec urna. In eget iaculis ante, nec ullamcorper felis.
+      <div class="form-elements">
+        <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbxvUa5P34xiZ41z-l6BGnfm68_42rbDRF_nQOMh/exec">
+          <div>
+            <input type="text" id="name" name="name" placeholder="Meno" />
+  
+            <textarea id="message" name="message" rows="1" placeholder="Správa"></textarea>
+            
+            <input type="text" id="email" name="email" type="email" value="" required placeholder="e - mail"/>
+  
+            <button class="button-success pure-button button-xlarge sendB">
+              <i class="fa fa-paper-plane"></i>&nbsp;Send
+            </button>
+          </div>
+  
+          <div style="display:none" class="thankyou_message">
+            <p>Ďakujem za správu. Ozvem sa čoskoro</p>
+          </div>
+  
+        </form>
+      </div> <br><br>
 
-        Ut quis purus ullamcorper, sagittis leo vitae, tincidunt quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent consequat eros in blandit luctus. Nulla fringilla ultrices arcu, eget fringilla diam eleifend et. Aenean id odio risus. Donec in ullamcorper nulla. Nullam faucibus, justo sed aliquet vulputate, nisi purus interdum nisi, nec faucibus nunc odio tristique urna. Suspendisse quis magna condimentum, consectetur magna quis, rhoncus ipsum. Nulla fringilla et turpis vel tristique. Phasellus quis pellentesque libero. In ac maximus justo. Duis ac neque ac libero pretium dictum. Nullam vel elementum est.
+      <a href="https://github.com/KatarinaMarcincakova" class="iconPad"><i class="fa fa-github w3-xxlarge" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/_katka12/" class="iconPad"><i class="fa fa-instagram w3-xxlarge" aria-hidden="true"></i></a> 
+      <br> <br>
 
-      </p>
     </div>
 
     
@@ -377,31 +401,9 @@
       </div>
     </div>
 
-<!-- modal sutaze
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close_m" onclick="close_modal(3)">&times;</span>
-        <p class="modal-title">First Lego League</p>
-        <p class="modal-text">modal sutaze 0</p>
-      </div>
-    </div>
-
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close_m" onclick="close_modal(4)">&times;</span>
-        <p>modal sutaze 1</p>
-      </div>
-    </div>
-
-    <div class="modal">
-      <div class="modal-content">
-        <span class="close_m" onclick="close_modal(5)">&times;</span>
-        <p>modal sutaze 2</p>
-      </div>
-    </div> -->
-
 
     <script src="script.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
 
   </body>
 </html>

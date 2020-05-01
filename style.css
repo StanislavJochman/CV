@@ -238,6 +238,30 @@ hr {
     z-index: 999 !important;
 }
 
+.form-elements {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type=text], textarea {
+  width: 100%;
+  background-color: #ebe4f2;
+}
+
+.sendB {
+  background-color: #ebe4f2;
+  color: #442e2a;
+}
+
+.sendB:hover {
+  background-color: #ec9563;
+}
+
+.iconPad {
+  margin: 2%;
+}
+
 /* ------------------------------ MEDIA --------------------------------*/
 @media screen and (max-width: 595px) {
   .menu {
