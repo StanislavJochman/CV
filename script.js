@@ -6,13 +6,9 @@ function close_modal(numM) {
   //console.log("close")
 }
 
-//window.onclick = function(event) {
-//  if (event.target == modal) {
-//    modal.style.display = "none";
-//  }
-//}
-
 function open_modal(numM) {
   m[numM].style.display = "block";
   //console.log("open")
 }
+
+
