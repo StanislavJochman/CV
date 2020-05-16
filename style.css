@@ -4,7 +4,7 @@ body, html {
   height: 100%;
   line-height: 1.8;
   color: #0c1d24;
-  background-color: #e4e3f5;
+  background-color: #265c73;
   font-size: 1.2em;
 }
 
@@ -34,7 +34,7 @@ div {
   width: auto;
   float: left;
   margin-left: 10%;
-  margin-top: 8%;
+  margin-top: 15%;
 }
 
 .name {
@@ -204,6 +204,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  color: #0c1d24;
 }
 
 input[type=text], textarea {
