@@ -36,7 +36,7 @@ function open_tl(num) {
 // setProgress(20);
 
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne']
-var skillPerc = [80, 80, 60, 75, 50, 95]
+var skillPerc = [80, 80, 70, 80, 60, 95]
 
 for (i = 0; i < 6; i++) {
     var circle = document.querySelector(listOfSkills[i]);
