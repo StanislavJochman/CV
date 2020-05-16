@@ -20,3 +20,32 @@ function open_tl(num) {
     $('.tldiv').eq(num).addClass('shown');
     $('.aboutNavBtn').eq(num).css("background-color", "#0c1d24")
 }
+
+// var circle = document.querySelector('.Xcircle');
+// var radius = circle.r.baseVal.value;
+// var circumference = radius * 2 * Math.PI;
+
+// circle.style.strokeDasharray = `${circumference} ${circumference}`;
+// circle.style.strokeDashoffset = `${circumference}`;
+
+// function setProgress(percent, skill) {
+//     const offset = circumference - percent / 100 * circumference;
+//     circle.style.strokeDashoffset = offset;
+// }
+
+// setProgress(20);
+
+var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne']
+var skillPerc = [80, 80, 60, 75, 50, 95]
+
+for (i = 0; i < 6; i++) {
+    var circle = document.querySelector(listOfSkills[i]);
+    var radius = circle.r.baseVal.value;
+    var circumference = radius * 2 * Math.PI;
+
+    circle.style.strokeDasharray = `${circumference} ${circumference}`;
+    circle.style.strokeDashoffset = `${circumference}`;
+
+    var offset = circumference - skillPerc[i] / 100 * circumference;
+    circle.style.strokeDashoffset = offset;
+}

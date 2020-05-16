@@ -365,6 +365,24 @@ input[type=text], textarea {
   text-align: center;
 }
 
+.skillsDv {
+  width: 100%;
+  margin-left: 14%;
+  margin-right: auto;
+  align-items: center;
+}
+
+.skillsCont {
+  width: 11%;
+  align-items: center;
+}
+
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
 /* ------------------------------------------------ MEDIA ----------------------------------------------- */
 @media screen and (max-width: 600px) {
 /* Place the timelime to the left */
