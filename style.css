@@ -107,6 +107,7 @@ div {
   top: 0px;
   background-color: #0c1d24;
   color: #e4e3f5;
+  z-index: 999 !important;
 }
 
 .nav-ul {
