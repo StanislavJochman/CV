@@ -4,7 +4,7 @@ body, html {
   height: 100%;
   line-height: 1.8;
   color: #0c1d24;
-  background-color: #265c73;
+  background-color: #e4e3f5;
   font-size: 1.2em;
 }
 
@@ -241,20 +241,34 @@ input[type=text], textarea {
   cursor: pointer;
 }
 
-.aboutNav {
+.aboutNav, .compNav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-.aboutNavBtn {
+.aboutNavBtn, .compNavBtn {
   color: #e4e3f5;
   background-color: transparent;
   border: 2px solid transparent !important;
   font-size: 1.5em;
   margin: 0.1%;
   padding: 0.2%;
+}
+
+.compIcons {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: auto;
+}
+
+.comp {
+  width: 30%;
+}
+
+.compImg {
+  width: 100%;
 }
 
 * {
