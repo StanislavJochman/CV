@@ -241,7 +241,7 @@ input[type=text], textarea {
   cursor: pointer;
 }
 
-.aboutNav, .compNav {
+.aboutNav, .cpNav {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -257,18 +257,80 @@ input[type=text], textarea {
   padding: 0.2%;
 }
 
-.compIcons {
+.projNavBtn {
+  color: #0c1d24;
+  background-color: transparent;
+  border: 2px solid transparent !important;
+  font-size: 1.5em;
+  margin: 0.1%;
+  padding: 0.2%;
+}
+
+.row_cp {
   width: 60%;
   margin-left: 20%;
   margin-right: auto;
 }
 
-.comp {
-  width: 30%;
+.column_cp {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
 }
 
-.compImg {
+.row_cp::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container_cp {
+  position: relative;
   width: 100%;
+}
+
+.image_cp {
+  opacity: 1;
+  display: block;
+  width: auto;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle_cp {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container_cp:hover .image_cp {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.container_cp:hover .middle_cp {
+  opacity: 1;
+}
+
+.text_cp {
+  background-color: transparent;
+  color: #363237;
+  font-size: 25px;
+  padding: 16px 32px;
+}
+
+.text_d0 {
+  color: #0c1d24;
+}
+
+.text_d1 {
+  color: #e4e3f5;
 }
 
 * {
