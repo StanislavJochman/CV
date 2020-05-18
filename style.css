@@ -256,7 +256,7 @@ input[type=text], textarea {
 .aboutNavBtn, .compNavBtn {
   color: #e4e3f5;
   background-color: transparent;
-  border: 2px solid transparent !important;
+  border: 2px solid #0c1d24 !important;
   font-size: 1.5em;
   margin: 0.1%;
   padding: 0.2%;
@@ -265,7 +265,7 @@ input[type=text], textarea {
 .projNavBtn {
   color: #0c1d24;
   background-color: transparent;
-  border: 2px solid transparent !important;
+  border: 2px solid #0c1d24 !important;
   font-size: 1.5em;
   margin: 0.1%;
   padding: 0.2%;

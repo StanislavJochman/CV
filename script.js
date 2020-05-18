@@ -21,20 +21,6 @@ function open_tl(num) {
     $('.aboutNavBtn').eq(num).css("background-color", "#0c1d24")
 }
 
-// var circle = document.querySelector('.Xcircle');
-// var radius = circle.r.baseVal.value;
-// var circumference = radius * 2 * Math.PI;
-
-// circle.style.strokeDasharray = `${circumference} ${circumference}`;
-// circle.style.strokeDashoffset = `${circumference}`;
-
-// function setProgress(percent, skill) {
-//     const offset = circumference - percent / 100 * circumference;
-//     circle.style.strokeDashoffset = offset;
-// }
-
-// setProgress(20);
-
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne']
 var skillPerc = [80, 80, 70, 80, 60, 95]
 
