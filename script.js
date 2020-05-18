@@ -1,6 +1,4 @@
-// ********************************************************************************* TIMELINES ***************************************************************
-
-var numOfTl = 3;
+numOfTl = 3;
 
 $('.aboutNavBtn').eq(0).css("background-color", "#0c1d24")
 
@@ -23,32 +21,19 @@ function open_tl(num) {
     $('.aboutNavBtn').eq(num).css("background-color", "#0c1d24")
 }
 
-// ********************************************************************************* COMPETITIONS ************************************************************
+// var circle = document.querySelector('.Xcircle');
+// var radius = circle.r.baseVal.value;
+// var circumference = radius * 2 * Math.PI;
 
-var numOfComp = 7;
-var numOfRob = 5;
-var numOfInf = 2;
-var type = ['.inf', '.rob']
+// circle.style.strokeDasharray = `${circumference} ${circumference}`;
+// circle.style.strokeDashoffset = `${circumference}`;
 
-$('.compNavBtn').eq(0).css("background-color", "#0c1d24")
+// function setProgress(percent, skill) {
+//     const offset = circumference - percent / 100 * circumference;
+//     circle.style.strokeDashoffset = offset;
+// }
 
-for (i = 1; i < 3; i++) {
-    $('.compNavBtn').eq(i).css("background-color", "transparent")
-    $('.compNavBtn').eq(i).css("color", "#e4e3f5")
-}
-
-function open_all(t) {
-}
-
-function open_inf(t) {
-}
-
-function open_rob(t) {
-}
-
-open_all(t);
-
-// ********************************************************************************* SKILLS *******************************************************************
+// setProgress(20);
 
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne']
 var skillPerc = [80, 80, 70, 80, 60, 95]
