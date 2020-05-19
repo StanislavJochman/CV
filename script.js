@@ -30,14 +30,14 @@ function open_all_comp() {
         $('.robcomp').eq(i).removeClass('hidden');
         $('.robcomp').eq(i).addClass('shown');
     }
-    
-    $('.compNavBtn').eq(0).css("background-color", "#e4e3f5")
-    $('.compNavBtn').eq(0).css("color", "#0c1d24")
 
-    for (i = 1; i < numOfTl; i++) {
+    for (i = 0; i < numOfTl; i++) {
         $('.compNavBtn').eq(i).css("background-color", "transparent")
         $('.compNavBtn').eq(i).css("color", "#0c1d24")
     }
+    
+    $('.compNavBtn').eq(0).css("background-color", "#0c1d24")
+    $('.compNavBtn').eq(0).css("color", "#e4e3f5")
 }
 
 function open_rob_comp() {
@@ -56,8 +56,8 @@ function open_rob_comp() {
         $('.compNavBtn').eq(i).css("color", "#0c1d24")
     }
     
-    $('.compNavBtn').eq(2).css("background-color", "#e4e3f5")
-    $('.compNavBtn').eq(2).css("color", "#0c1d24")
+    $('.compNavBtn').eq(2).css("background-color", "#0c1d24")
+    $('.compNavBtn').eq(2).css("color", "#e4e3f5")
 }
 
 function open_inf_comp() {
@@ -76,8 +76,8 @@ function open_inf_comp() {
         $('.compNavBtn').eq(i).css("color", "#0c1d24")
     }
     
-    $('.compNavBtn').eq(1).css("background-color", "#e4e3f5")
-    $('.compNavBtn').eq(1).css("color", "#0c1d24")
+    $('.compNavBtn').eq(1).css("background-color", "#0c1d24")
+    $('.compNavBtn').eq(1).css("color", "#e4e3f5")
 }
 
 function open_all_proj() {
