@@ -408,9 +408,9 @@ input[type=text], textarea {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #ecf5f9;
+  border: medium solid #0c1d24;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #ecf5f9;
+  border-color: transparent transparent transparent #0c1d24;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -422,9 +422,9 @@ input[type=text], textarea {
   width: 0;
   z-index: 1;
   left: 31px;
-  border: medium solid #ecf5f9;
+  border: medium solid #0c1d24;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #ecf5f9 transparent transparent;
+  border-color: transparent #0c1d24 transparent transparent;
 }
 
 /* Fix the circle on line */
