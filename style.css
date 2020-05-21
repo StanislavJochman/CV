@@ -194,6 +194,8 @@ h1 {
   background-color: #0c1d24;
   color: #e4e3f5;
   margin-top: 2% !important;
+  margin-bottom: 0px;
+  bottom: 0px !important;
 }
 
 .copyText {
