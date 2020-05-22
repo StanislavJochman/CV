@@ -267,6 +267,10 @@ input[type=text], textarea {
   padding-right: 0.6%;
 }
 
+.projNavBtn:focus {
+  outline: none !important;
+}
+
 .aboutNavBtn, .compNavBtn {
   color: #0c1d24;
   background-color: transparent;

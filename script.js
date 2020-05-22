@@ -90,14 +90,14 @@ function open_all_proj() {
         $('.robproj').eq(i).removeClass('hidden');
         $('.robproj').eq(i).addClass('shown');
     }
-    
-    $('.projNavBtn').eq(0).css("background-color", "#e4e3f5")
-    $('.projNavBtn').eq(0).css("color", "#0c1d24")
 
     for (i = 1; i < numOfTl; i++) {
         $('.projNavBtn').eq(i).css("background-color", "transparent")
         $('.projNavBtn').eq(i).css("color", "#e4e3f5")
     }
+    
+    $('.projNavBtn').eq(0).css("background-color", "#e4e3f5")
+    $('.projNavBtn').eq(0).css("color", "#0c1d24")
 }
 
 function open_rob_proj() {
