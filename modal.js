@@ -1,14 +1,28 @@
+// ***************************************************** MODALS ************************
+
 var m = document.getElementsByClassName("modal");
-//var span = document.getElementsByClassName("close")[0];
 
 function close_modal(numM) {
   m[numM].style.display = "none";
-  //console.log("close")
 }
 
 function open_modal(numM) {
   m[numM].style.display = "block";
-  //console.log("open")
 }
 
+// **************************************************** MENU ****************************
 
+var mySidebar = document.getElementById("mySidebar");
+
+function menu_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+    sidebar.style.display = "none";
+  }
+}
+
+function menu_close() {
+  mySidebar.style.display = "none";
+}
