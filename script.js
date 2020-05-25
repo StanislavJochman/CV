@@ -170,8 +170,9 @@ function open_tl(num) {
 
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne'];
 var skillPerc = [80, 80, 70, 80, 60, 95];
+var numOfScircles = 6;
 
-for (i = 0; i < 6; i++) {
+for (i = 0; i < numOfScircles; i++) {
     var circle = document.querySelector(listOfSkills[i]);
     var radius = circle.r.baseVal.value;
     var circumference = radius * 2 * Math.PI;
@@ -200,11 +201,11 @@ $(document).ready(function() {
      });
 });
 
-// *********************************************************************** .skillsCont HEIGHT ****************************
+// *********************************************************************** .skillsCont SIZES ****************************
 
 var skillsConW = $('.skillsCont').width();
 var browserW = $(window).width()
-var skillsContH = (browserW / 100) * skillsConW;
+var skillsContH = ((browserW / 100) * skillsConW) + 10;
 
 console.log(browserW);
 $('.skillsCont').css('height', skillsContH + 'px');

@@ -482,7 +482,7 @@ input[type=text], textarea {
 
 .skillsDv {
   width: 100%;
-  margin-left: 14%;
+  margin-left: 2%;
   margin-right: auto;
   align-items: center;
 }
@@ -494,7 +494,7 @@ input[type=text], textarea {
 }
 
 .skillsCont {
-  width: 11%;
+  width: 16%;
   height: fit-content;
   padding: 5px;
   align-items: center;
@@ -602,7 +602,33 @@ input[type=text], textarea {
 }
 
 /* ------------------------------------------------ MEDIA ----------------------------------------------- */
-@media screen and (max-width: 600px) { /* timeline */
+
+@media screen and (max-width: 1030px) {
+  .profilFoto {
+    width: 40%;
+    height: auto;
+    padding-top: 5%;
+  }
+
+  .titleText {
+    width: 45%;
+    float: left;
+  }
+
+  .skillsCont {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .skillsCont {
+    width: 25%;
+  }
+}
+
+/* timeline */
+
+@media screen and (max-width: 600px) { 
   .timeline::after {
     left: 31px;
   }
@@ -627,46 +653,9 @@ input[type=text], textarea {
   .right {
     left: 0%;
   }
-}
 
-@media screen and (max-width: 365px){
-  .navbar {
-    display: none;
-  }
-
-  .navbar-mini {
-    display: block;
-  }
-
-  .nav-mini {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 366px){
-  .navbar {
-    display: block;
-  }
-
-  .navbar-mini {
-    display: none;
-  }
-
-  .nav-mini {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1030px) {
-  .profilFoto {
-    width: 40%;
-    height: auto;
-    padding-top: 5%;
-  }
-
-  .titleText {
-    width: 45%;
-    float: left;
+  .skillsCont {
+    width: 30%;
   }
 }
 
@@ -714,7 +703,40 @@ input[type=text], textarea {
   .modal-icon {
     width: 60%;
   }
+
+  .skillsCont {
+    width: 40%;
+  }
 }
 
-@media screen and (min-width: 595px) {
+@media screen and (max-width: 365px){
+  .navbar {
+    display: none;
+  }
+
+  .navbar-mini {
+    display: block;
+  }
+
+  .nav-mini {
+    display: none;
+  }
+
+  .skillsCont {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 366px){
+  .navbar {
+    display: block;
+  }
+
+  .navbar-mini {
+    display: none;
+  }
+
+  .nav-mini {
+    display: none;
+  }
 }
