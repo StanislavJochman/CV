@@ -15,7 +15,7 @@ $('.projNavBtn').eq(0).css("color", "#0c1d24");
 for (i = 1; i < numOfTl; i++) {
     $('.compNavBtn').eq(i).css("background-color", "transparent");
     $('.compNavBtn').eq(i).css("color", "#0c1d24");
-	
+
     $('.projNavBtn').eq(i).css("background-color", "transparent");
     $('.projNavBtn').eq(i).css("color", "#e4e3f5");
 };
@@ -25,7 +25,7 @@ function open_all_comp() {
         $('.infcomp').eq(i).removeClass('hidden');
         $('.infcomp').eq(i).addClass('shown');
     };
-    
+
     for (i = 0; i < numOfRobComp; i++) {
         $('.robcomp').eq(i).removeClass('hidden');
         $('.robcomp').eq(i).addClass('shown');
@@ -35,7 +35,7 @@ function open_all_comp() {
         $('.compNavBtn').eq(i).css("background-color", "transparent");
         $('.compNavBtn').eq(i).css("color", "#0c1d24");
     };
-    
+
     $('.compNavBtn').eq(0).css("background-color", "#0c1d24");
     $('.compNavBtn').eq(0).css("color", "#e4e3f5");
 };
@@ -45,7 +45,7 @@ function open_rob_comp() {
         $('.infcomp').eq(i).removeClass('shown');
         $('.infcomp').eq(i).addClass('hidden');
     };
-    
+
     for (i = 0; i < numOfRobComp; i++) {
         $('.robcomp').eq(i).removeClass('hidden');
         $('.robcomp').eq(i).addClass('shown');
@@ -55,7 +55,7 @@ function open_rob_comp() {
         $('.compNavBtn').eq(i).css("background-color", "transparent");
         $('.compNavBtn').eq(i).css("color", "#0c1d24");
     };
-    
+
     $('.compNavBtn').eq(2).css("background-color", "#0c1d24");
     $('.compNavBtn').eq(2).css("color", "#e4e3f5");
 };
@@ -65,7 +65,7 @@ function open_inf_comp() {
         $('.infcomp').eq(i).removeClass('hidden');
         $('.infcomp').eq(i).addClass('shown');
     };
-    
+
     for (i = 0; i < numOfRobComp; i++) {
         $('.robcomp').eq(i).removeClass('shown');
         $('.robcomp').eq(i).addClass('hidden');
@@ -75,7 +75,7 @@ function open_inf_comp() {
         $('.compNavBtn').eq(i).css("background-color", "transparent");
         $('.compNavBtn').eq(i).css("color", "#0c1d24");
     };
-    
+
     $('.compNavBtn').eq(1).css("background-color", "#0c1d24");
     $('.compNavBtn').eq(1).css("color", "#e4e3f5");
 };
@@ -85,7 +85,7 @@ function open_all_proj() {
         $('.infproj').eq(i).removeClass('hidden');
         $('.infproj').eq(i).addClass('shown');
     };
-    
+
     for (i = 0; i < numOfRobProj; i++) {
         $('.robproj').eq(i).removeClass('hidden');
         $('.robproj').eq(i).addClass('shown');
@@ -95,7 +95,7 @@ function open_all_proj() {
         $('.projNavBtn').eq(i).css("background-color", "transparent");
         $('.projNavBtn').eq(i).css("color", "#e4e3f5");
     };
-    
+
     $('.projNavBtn').eq(0).css("background-color", "#e4e3f5");
     $('.projNavBtn').eq(0).css("color", "#0c1d24");
 };
@@ -105,7 +105,7 @@ function open_rob_proj() {
         $('.infproj').eq(i).removeClass('shown');
         $('.infproj').eq(i).addClass('hidden');
     };
-    
+
     for (i = 0; i < numOfRobProj; i++) {
         $('.robproj').eq(i).removeClass('hidden');
         $('.robproj').eq(i).addClass('shown');
@@ -115,7 +115,7 @@ function open_rob_proj() {
         $('.projNavBtn').eq(i).css("background-color", "transparent");
         $('.projNavBtn').eq(i).css("color", "#e4e3f5");
     };
-    
+
     $('.projNavBtn').eq(2).css("background-color", "#e4e3f5");
     $('.projNavBtn').eq(2).css("color", "#0c1d24");
 };
@@ -125,7 +125,7 @@ function open_inf_proj() {
         $('.infproj').eq(i).removeClass('hidden');
         $('.infproj').eq(i).addClass('shown');
     };
-    
+
     for (i = 0; i < numOfRobProj; i++) {
         $('.robproj').eq(i).removeClass('shown');
         $('.robproj').eq(i).addClass('hidden');
@@ -135,7 +135,7 @@ function open_inf_proj() {
         $('.projNavBtn').eq(i).css("background-color", "transparent");
         $('.projNavBtn').eq(i).css("color", "#e4e3f5");
     };
-    
+
     $('.projNavBtn').eq(1).css("background-color", "#e4e3f5");
     $('.projNavBtn').eq(1).css("color", "#0c1d24");
 };
@@ -146,7 +146,7 @@ $('.aboutNavBtn').eq(0).css("background-color", "#0c1d24");
 $('.aboutNavBtn').eq(0).css("color", "#e4e3f5");
 
 for (i = 1; i < numOfTl; i++) {
-	$('.tldiv').eq(i).addClass('hidden');
+    $('.tldiv').eq(i).addClass('hidden');
     $('.aboutNavBtn').eq(i).css("background-color", "transparent");
     $('.aboutNavBtn').eq(i).css("color", "#0c1d24");
 };
@@ -169,7 +169,7 @@ function open_tl(num) {
 // *************************************************************************** SKILLS **********************************
 
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne'];
-var skillPerc = [80, 80, 70, 80, 60, 95];
+var skillPerc = [85, 85, 85, 85, 60, 95];
 var numOfScircles = 6;
 
 for (i = 0; i < numOfScircles; i++) {
@@ -187,18 +187,18 @@ for (i = 0; i < numOfScircles; i++) {
 // *************************************************************************** SCROLL **********************************
 
 $(document).ready(function() {
-    $('.container').click(function() { 
-      $('body').css('overflow', 'hidden');
-      $('.modal-content').css('overflow-y', 'auto');
+    $('.container').click(function() {
+        $('body').css('overflow', 'hidden');
+        $('.modal-content').css('overflow-y', 'auto');
     });
-    $('.close_m').click(function() { 
-      $('body').css('overflow', 'auto');
-      $('.modal-content').css('overflow-y', 'hidden');
+    $('.close_m').click(function() {
+        $('body').css('overflow', 'auto');
+        $('.modal-content').css('overflow-y', 'hidden');
     });
-    $('.close_m_b').click(function() { 
-      $('body').css('overflow', 'auto');
-      $('.modal-content').css('overflow-y', 'hidden');
-     });
+    $('.close_m_b').click(function() {
+        $('body').css('overflow', 'auto');
+        $('.modal-content').css('overflow-y', 'hidden');
+    });
 });
 
 // *********************************************************************** .skillsCont SIZES ****************************
