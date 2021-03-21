@@ -2,7 +2,7 @@
 
 var m = document.getElementsByClassName("modal");
 
-function close_modal(numM) {
+function close_modal(numM) {dddd
   m[numM].style.display = "none";
 }
 
