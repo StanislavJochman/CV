@@ -169,7 +169,7 @@ function open_tl(num) {
 // *************************************************************************** SKILLS **********************************
 
 var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne', '.cs'];
-var skillPerc = [75, 70, 75, 85, 40, 100, 55];
+var skillPerc = [75, 70, 75, 85, 40, 100, 40];
 var numOfScircles = listOfSkills.length;
 var browserW = $(window).width();
 var gradientStart = '#8cc2d9';
