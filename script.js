@@ -168,20 +168,29 @@ function open_tl(num) {
 
 // *************************************************************************** SKILLS **********************************
 
-var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne'];
-var skillPerc = [85, 85, 85, 85, 60, 95];
-var numOfScircles = 6;
+var listOfSkills = ['.html', '.css', '.js', '.python', '.arduino', '.ne', '.cs'];
+var skillPerc = [75, 70, 75, 85, 40, 100, 55];
+var numOfScircles = listOfSkills.length;
+var browserW = $(window).width();
+var gradientStart = '#8cc2d9';
+var gradientEnd = '#0d1f26';
 
 for (i = 0; i < numOfScircles; i++) {
-    var circle = document.querySelector(listOfSkills[i]);
-    var radius = circle.r.baseVal.value;
-    var circumference = radius * 2 * Math.PI;
+    $(listOfSkills[i]).css('width', `${skillPerc[i]}%`);
 
-    circle.style.strokeDasharray = `${circumference} ${circumference}`;
-    circle.style.strokeDashoffset = `${circumference}`;
+    var skillId = listOfSkills[i].replace(".", "") + "-perc";
+    document.getElementById(skillId).innerHTML = skillPerc[i] + "%";
 
-    var offset = circumference - skillPerc[i] / 100 * circumference;
-    circle.style.strokeDashoffset = offset;
+    if (skillPerc[i] < 25)
+        gradientEnd = '#53a3c6';
+    else if (skillPerc[i] < 50)
+        gradientEnd = '#337a99';
+    else if (skillPerc[i] < 75)
+        gradientEnd = '#204d60';
+    else
+        gradientEnd = '#0d1f26';
+
+    $(listOfSkills[i]).css('background-image', `linear-gradient(to right, ${gradientStart}, ${gradientEnd})`);
 };
 
 // *************************************************************************** SCROLL **********************************
@@ -202,10 +211,11 @@ $(document).ready(function() {
 });
 
 // *********************************************************************** .skillsCont SIZES ****************************
-
+/*
 var skillsConW = $('.skillsCont').width();
 var browserW = $(window).width()
 var skillsContH = ((browserW / 100) * skillsConW) + 10;
 
 console.log(browserW);
 $('.skillsCont').css('height', skillsContH + 'px');
+*/

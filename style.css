@@ -634,6 +634,39 @@ textarea {
     z-index: 999 !important;
 }
 
+.container-skills {
+    width: 80%;
+    background-color: #edecf8;
+    margin-left: 10%;
+    margin-right: auto;
+    margin-top: 2%;
+    border-radius: 2px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-right: 0.5%;
+    color: #edecf8;
+    background-color: #265c73;
+    border-radius: 2px;
+}
+
+.skills-description {
+    z-index: 3;
+    float: left;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 0.5%;
+    color: #265c73;
+}
+
+.skills-perc {
+    margin: 0%;
+    padding: 0%;
+}
+
 
 /* ------------------------------------------------ MEDIA ----------------------------------------------- */
 
